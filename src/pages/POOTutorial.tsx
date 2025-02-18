@@ -1,5 +1,5 @@
 
-import { ArrowLeft } from 'lucide-react';
+import { ArrowLeft, Star } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const POOTutorial = () => {

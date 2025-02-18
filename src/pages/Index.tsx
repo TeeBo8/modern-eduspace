@@ -1,6 +1,5 @@
-
 import { Link } from 'react-router-dom';
-import { ArrowRight, BookOpen, Star } from 'lucide-react';
+import { ArrowRight, BookOpen, Star, GraduationCap } from 'lucide-react';
 
 const Index = () => {
   return (
