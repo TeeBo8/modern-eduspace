@@ -6,6 +6,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import POOTutorial from "./pages/POOTutorial";
+import FPTutorial from "./pages/FPTutorial";
 import Layout from "./components/Layout";
 import NotFound from "./pages/NotFound";
 
@@ -20,6 +21,7 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Layout><Index /></Layout>} />
           <Route path="/poo-tutorial" element={<Layout><POOTutorial /></Layout>} />
+          <Route path="/fp-tutorial" element={<Layout><FPTutorial /></Layout>} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

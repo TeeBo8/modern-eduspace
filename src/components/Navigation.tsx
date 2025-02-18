@@ -34,6 +34,14 @@ const Navigation = () => {
             >
               Tutoriel POO
             </Link>
+            <Link
+              to="/fp-tutorial"
+              className={`text-sm font-medium transition-colors hover:text-accent ${
+                location.pathname === '/fp-tutorial' ? 'text-accent' : 'text-gray-600'
+              }`}
+            >
+              Tutoriel PF
+            </Link>
           </div>
         </div>
       </div>
