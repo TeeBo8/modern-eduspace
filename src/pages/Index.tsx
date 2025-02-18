@@ -1,5 +1,6 @@
+
 import { Link } from 'react-router-dom';
-import { ArrowRight, BookOpen, Star, GraduationCap } from 'lucide-react';
+import { ArrowRight, BookOpen, Star, GraduationCap, Code2 } from 'lucide-react';
 
 const Index = () => {
   return (
@@ -78,19 +79,32 @@ const Index = () => {
                 <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
               </span>
             </Link>
-            {/* Placeholder cards for future courses */}
-            {[1, 2].map((index) => (
-              <div
-                key={index}
-                className="bg-white/50 rounded-2xl p-6 shadow border-2 border-dashed border-gray-200"
-              >
-                <div className="h-48 bg-gray-100 rounded-xl mb-6 flex items-center justify-center">
-                  <span className="text-gray-400">Bientôt disponible</span>
-                </div>
-                <div className="h-6 w-2/3 bg-gray-100 rounded mb-2"></div>
-                <div className="h-4 w-3/4 bg-gray-100 rounded"></div>
+
+            <Link
+              to="/fp-tutorial"
+              className="group bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1"
+            >
+              <div className="h-48 bg-primary rounded-xl mb-6 flex items-center justify-center">
+                <Code2 className="h-16 w-16 text-accent group-hover:scale-110 transition-transform" />
               </div>
-            ))}
+              <h3 className="font-display text-xl font-bold mb-2">Tutoriel PF</h3>
+              <p className="text-gray-600 mb-4">
+                Découvrez la Programmation Fonctionnelle.
+              </p>
+              <span className="text-accent font-medium inline-flex items-center">
+                Commencer
+                <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+              </span>
+            </Link>
+
+            {/* Placeholder card for future course */}
+            <div className="bg-white/50 rounded-2xl p-6 shadow border-2 border-dashed border-gray-200">
+              <div className="h-48 bg-gray-100 rounded-xl mb-6 flex items-center justify-center">
+                <span className="text-gray-400">Bientôt disponible</span>
+              </div>
+              <div className="h-6 w-2/3 bg-gray-100 rounded mb-2"></div>
+              <div className="h-4 w-3/4 bg-gray-100 rounded"></div>
+            </div>
           </div>
         </div>
       </section>
